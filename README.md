@@ -2,10 +2,7 @@
 
 Single-page static site hosted on GitHub Pages at https://www.flymarketing.agency. The bare domain flymarketing.agency (and /lander) stays on GoHighLevel. No build step.
 
-- `index.html`: home page
-- `fly-trap-system/`, `how-it-works/`, `about/`, `faq/`: one page each (folder + index.html)
-- `site.css`, `site.js`: shared styles and scripts used by every page
-- `privacy.html`, `terms.html`: legal pages (styled by `legal.css`)
+- `index.html`: the whole site
 - `brand/`: logo files (SVG + PNG) for use anywhere
 - `og-image.png`: the preview image shown when the link is shared
 - `CNAME`: tells GitHub Pages to serve the site on www.flymarketing.agency
