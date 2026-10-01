@@ -168,14 +168,6 @@ h1 .w{display:inline-block;opacity:0;transform:translateY(.5em) rotate(2deg);fil
   .strip div:nth-child(-n+2){border-bottom:1px solid var(--line)}
 }
 
-/* marquee */
-.marquee{margin-top:70px;overflow:hidden;border-block:1px solid var(--line);padding:18px 0;
-  mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
-.marquee .track{display:flex;gap:40px;width:max-content;animation:marquee 38s linear infinite}
-.marquee:hover .track{animation-play-state:paused}
-.marquee span{display:flex;align-items:center;gap:40px;font:600 13px "JetBrains Mono",monospace;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);white-space:nowrap}
-.marquee span::after{content:"✦";color:var(--green)}
-@keyframes marquee{to{transform:translateX(-50%)}}
 
 /* ---------- cards ---------- */
 .card{
@@ -489,12 +481,6 @@ footer .legal{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);
     </div>
   </div>
 
-  <div class="marquee" aria-hidden="true">
-    <div class="track">
-      <span>Direct response video ads</span><span>Retargeting image ads</span><span>Pre-qualifying landing page</span><span>Blue-bubble AI texting</span><span>AI voice booking</span><span>Text + email nurture</span><span>Patient reactivation</span><span>Google review automation</span><span>Referral engine</span>
-      <span>Direct response video ads</span><span>Retargeting image ads</span><span>Pre-qualifying landing page</span><span>Blue-bubble AI texting</span><span>AI voice booking</span><span>Text + email nurture</span><span>Patient reactivation</span><span>Google review automation</span><span>Referral engine</span>
-    </div>
-  </div>
 </header>
 
 <!-- THE DIFFERENCE -->
