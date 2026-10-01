@@ -1,16 +1,16 @@
 # Fly Marketing Agency website
 
-Single-page static site hosted on GitHub Pages at https://flymarketing.agency. No build step.
+Single-page static site hosted on GitHub Pages at https://www.flymarketing.agency. The bare domain flymarketing.agency (and /lander) stays on GoHighLevel. No build step.
 
 - `index.html`: the whole site
 - `brand/`: logo files (SVG + PNG) for use anywhere
 - `og-image.png`: the preview image shown when the link is shared
-- `CNAME`: tells GitHub Pages to serve the site on flymarketing.agency
+- `CNAME`: tells GitHub Pages to serve the site on www.flymarketing.agency
+- `lander/`: forwards www.flymarketing.agency/lander to the GHL landing page
 
 ## DNS (GoDaddy)
-- `A` records for `@`: 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
-- `CNAME` for `www`: `<github-username>.github.io`
-- Leave the `MX` and `TXT` records alone. They run your email.
+- `CNAME` for `www`: `marteljrsr.github.io`
+- Everything else (the `@` A record for GHL, `MX`, `TXT`) stays as is.
 
 ## Getting found on Google
 1. Add the domain in Google Search Console and submit `https://flymarketing.agency/sitemap.xml`.
