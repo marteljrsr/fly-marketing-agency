@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-3 -1 120 81">
+  <defs><linearGradient id="arrow" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#0a9a5e"/><stop offset="1" stop-color="#22e584"/></linearGradient></defs>
+  <g fill="#0b1112">
+    <rect x="0" y="8" width="11.5" height="46"/><rect x="0" y="8" width="34" height="11.5"/><rect x="0" y="27" width="29" height="11"/>
+    <rect x="40" y="8" width="11.5" height="46"/><rect x="40" y="42.5" width="31" height="11.5"/>
+  </g>
+  <path d="M68.5 9 L87 31.5 V54" fill="none" stroke="#0b1112" stroke-width="11.5" stroke-linejoin="round"/>
+  <path d="M87 31.5 L109 6.5" fill="none" stroke="url(#arrow)" stroke-width="11.5" stroke-linecap="round"/>
+  <path d="M95 5 H110 V20" fill="none" stroke="url(#arrow)" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="0" y="76" textLength="114" lengthAdjust="spacing" font-family="'JetBrains Mono',Consolas,monospace" font-weight="700" font-size="8.5" fill="#4a5752">MARKETING AGENCY</text>
+</svg>
