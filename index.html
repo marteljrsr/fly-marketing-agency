@@ -412,6 +412,20 @@ h1 .w{display:inline-block;opacity:0;transform:translateY(.5em) rotate(2deg);fil
 .facts span{padding:9px 14px;border-radius:999px;border:1px solid var(--line-2);font-size:.86rem;color:#cdd6d2;background:rgba(255,255,255,.02)}
 .facts span b{color:var(--green)}
 
+/* how it works */
+.how{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:60px;position:relative;text-align:left}
+.how::before{content:"";position:absolute;left:8%;right:8%;top:47px;height:2px;z-index:0;
+  background:linear-gradient(90deg,transparent,rgba(34,229,132,.5),rgba(168,240,92,.5),transparent)}
+.how .card{z-index:1;display:flex;flex-direction:column;gap:12px}
+.how .badge{display:flex;align-items:center;justify-content:space-between}
+.how .big{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;font:700 15px "JetBrains Mono",monospace;
+  background:linear-gradient(180deg,#3cf29a,#14c874);color:#03140b;box-shadow:0 0 24px var(--green-glow)}
+.how p{color:var(--muted);font-size:.95rem}
+.how ul{list-style:none;display:flex;flex-direction:column;gap:6px;margin-top:4px;font-size:.88rem;color:#cdd6d2}
+.how li::before{content:"› ";color:var(--green);font-weight:700}
+@media (max-width:960px){.how{grid-template-columns:1fr 1fr}.how::before{display:none}}
+@media (max-width:560px){.how{grid-template-columns:1fr}}
+
 /* fit */
 .fit{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:56px}
 @media (max-width:760px){.fit{grid-template-columns:1fr}}
@@ -490,6 +504,7 @@ footer .legal{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);
     </a>
     <div class="links">
       <a href="#system">Fly Trap System</a>
+      <a href="#how">How it works</a>
       <a href="#speed">Speed to lead</a>
       <a href="#founder">Founder</a>
       <a href="#fit">Who it's for</a>
@@ -510,7 +525,7 @@ footer .legal{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);
       <span class="w" style="--i:0">Fill</span> <span class="w" style="--i:1">your</span> <span class="w" style="--i:2">schedule</span> <span class="w" style="--i:3">with</span>
       <span class="w" style="--i:4"><span class="g">cash-pay</span></span> <span class="w" style="--i:5"><span class="g">patients</span></span> <span class="w" style="--i:6">on</span> <span class="w" style="--i:7">autopilot.</span>
     </h1>
-    <p class="lead fade-up" style="animation-delay:.8s">The Fly Trap System runs the whole patient journey: the ads, the landing page, a reply in under 60 seconds, an AI voice agent that books the visit, and the follow-up that gets them through your door ready to start a care plan.</p>
+    <p class="lead fade-up" style="animation-delay:.8s">We build, run and manage the Fly Trap System for you: the ads, the landing page, a reply in under 60 seconds, an AI voice agent that books the visit, and the follow-up that gets patients through your door ready to start a care plan. <strong style="color:var(--text);font-weight:600">You just see patients.</strong></p>
     <div class="hero-actions fade-up" style="animation-delay:1s">
       <a class="btn" href="#system">See the Fly Trap System
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
@@ -680,6 +695,39 @@ footer .legal{margin-top:24px;padding-top:20px;border-top:1px solid var(--line);
           <div class="col"><div class="node">+1</div><div class="node">+1</div><div class="node">+1</div></div><span class="arrow">→</span>
           <div class="col"><div class="node">+1</div><div class="node">+1</div><div class="node">+1</div><div class="node">+1</div></div>
         </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section id="how" style="padding-top:40px">
+  <div class="wrap center">
+    <span class="eyebrow reveal">How it works</span>
+    <h2 class="reveal">Done for you, <span class="g">start to finish.</span></h2>
+    <p class="lead reveal" style="margin-top:20px">You don't learn software or manage freelancers. We build it, launch it and run it, and you see the patients.</p>
+
+    <div class="how">
+      <article class="card reveal">
+        <div class="badge"><span class="big">01</span><span class="chip ok">DAY 0</span></div>
+        <h3>Strategy call</h3>
+        <p>We look at your offer, your market and your current follow-up. If it's not a fit, we'll tell you straight.</p>
+      </article>
+      <article class="card reveal">
+        <div class="badge"><span class="big">02</span><span class="chip ok">5 BUSINESS DAYS</span></div>
+        <h3>We build it</h3>
+        <p>Send us a few assets and we build everything:</p>
+        <ul><li>Landing page</li><li>Ad campaigns</li><li>Text + email sequences</li><li>AI text and voice agents</li></ul>
+      </article>
+      <article class="card reveal">
+        <div class="badge"><span class="big">03</span><span class="chip ok">WEEK 1–2</span></div>
+        <h3>Launch and learn</h3>
+        <p>Ads go live starting at $1,000 a month. Within 7 to 10 days we can read what your market is telling us.</p>
+      </article>
+      <article class="card reveal">
+        <div class="badge"><span class="big">04</span><span class="chip ok">ONGOING</span></div>
+        <h3>Manage and scale</h3>
+        <p>We watch the numbers, refresh creative, and push spend up only when patients are coming through the door.</p>
       </article>
     </div>
   </div>
