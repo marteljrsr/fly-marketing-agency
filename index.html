@@ -463,6 +463,12 @@ details[open] summary::after{transform:rotate(45deg);background:rgba(34,229,132,
 }
 .final .lead{margin:20px auto 34px}
 
+/* booking */
+.booking{max-width:900px;margin:44px auto 0;padding:10px;border-radius:24px;background:#0b0e0f;border:1px solid rgba(34,229,132,.35);box-shadow:0 40px 100px -50px var(--green-glow)}
+.booking iframe{display:block;min-height:640px;border-radius:14px}
+.m-only{display:none}
+@media (max-width:860px){nav .links a.m-only{display:block;color:var(--green);font-weight:600}}
+
 footer{border-top:1px solid var(--line);padding:40px 0 90px;color:var(--dim);font-size:.88rem}
 footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
 footer .legal{margin-top:36px;padding-top:22px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:12px 24px;flex-wrap:wrap}
@@ -521,9 +527,10 @@ footer .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;alig
       <a href="#founder">Founder</a>
       <a href="#fit">Who it's for</a>
       <a href="#faq">FAQ</a>
+      <a href="#book" class="m-only">Book a call</a>
     </div>
     <div class="nav-right">
-      <a class="btn" href="#contact">Contact</a>
+      <a class="btn" href="#book">Book a call</a>
       <button class="menu-btn" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
     </div>
   </div>
@@ -541,6 +548,7 @@ footer .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;alig
     <div class="hero-actions fade-up" style="animation-delay:1s">
       <a class="btn" href="#system">See the Fly Trap System
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M12 5v14M6 13l6 6 6-6"/></svg></a>
+      <a class="btn btn-ghost" href="#book">Book a call</a>
     </div>
 
     <div class="strip reveal">
@@ -863,6 +871,19 @@ footer .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;alig
   </div>
 </section>
 
+<!-- BOOK A CALL -->
+<section id="book" style="padding-top:40px">
+  <div class="wrap center">
+    <span class="eyebrow reveal">Book a call</span>
+    <h2 class="reveal">Let's see if it's a fit for <span class="g">your practice.</span></h2>
+    <p class="lead reveal" style="margin-top:20px">Pick a time for a free strategy call. We'll look at your offer, your market and your current follow-up, and tell you straight if the Fly Trap System is a fit.</p>
+    <div class="booking reveal">
+      <iframe src="https://api.leadconnectorhq.com/widget/booking/QgKDV1c1xvmmkctn7vdb" allow="payment" style="width:100%;border:none;overflow:hidden" scrolling="no" id="QgKDV1c1xvmmkctn7vdb_1790883650817" title="Book a strategy call with Fly Marketing Agency"></iframe>
+    </div>
+  </div>
+</section>
+<script src="https://link.msgsndr.com/js/form_embed.js" type="text/javascript"></script>
+
 <footer id="contact">
   <div class="wrap foot-grid">
     <div class="foot-brand">
@@ -887,6 +908,7 @@ footer .foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:36px;alig
     </nav>
     <div class="foot-col">
       <span class="mono">Contact</span>
+      <a href="#book">Book a call</a>
       <a href="mailto:marty@flymarketing.agency">marty@flymarketing.agency</a>
       <a href="https://www.instagram.com/martyfly__/" target="_blank" rel="noopener">Instagram @martyfly__</a>
     </div>
