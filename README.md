@@ -13,6 +13,6 @@ Single-page static site hosted on GitHub Pages at https://www.flymarketing.agenc
 - Everything else (the `@` A record for GHL, `MX`, `TXT`) stays as is.
 
 ## Getting found on Google
-1. Add the domain in Google Search Console and submit `https://flymarketing.agency/sitemap.xml`.
+1. Add the domain in Google Search Console and submit `https://www.flymarketing.agency/sitemap.xml`.
 2. Create and verify the Google Business Profile with the website link.
 3. Link the site from Instagram, Facebook and LinkedIn.
