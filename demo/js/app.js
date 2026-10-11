@@ -1095,7 +1095,7 @@
       renderPage(true);
     },
     'edit-client'(el) {
-      const c = el.dataset.id ? state.clients.find((x) => x.id === el.dataset.id) : { practiceName: '', ownerName: '', location: '', carePlanValue: 1400, monthlyRetainer: 2400, monthlyAdSpend: 1200, kpiTargets: { costPerLead: 30, costPerSchedule: 60 } };
+      const c = el.dataset.id ? state.clients.find((x) => x.id === el.dataset.id) : { practiceName: '', ownerName: '', location: '', carePlanValue: 1400, monthlyRetainer: 2000, monthlyAdSpend: 1500, kpiTargets: { costPerLead: 30, costPerSchedule: 60 } };
       openModal(c.id ? 'Edit client' : 'Add client', 'Profile, economics and KPI targets.', `<div class="form-grid">
         ${field('practiceName', 'Practice name', 'text', c.practiceName, { full: true })}
         ${field('ownerName', 'Owner', 'text', c.ownerName)}

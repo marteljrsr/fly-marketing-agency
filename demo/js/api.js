@@ -6,7 +6,7 @@
  * opening their share link on their own phone sees the mock data, not your edits,
  * until a real backend is wired in. */
 window.FlyAPI = (function () {
-  const KEY = 'fly-dashboard-v2';
+  const KEY = 'fly-dashboard-v3';
   const LATENCY = 320;
   const clone = (o) => JSON.parse(JSON.stringify(o));
 

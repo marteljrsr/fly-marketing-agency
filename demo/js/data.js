@@ -15,7 +15,7 @@ window.FLY_MOCK = (function () {
   const clients = [
     {
       id: 'riverstone', practiceName: 'Riverstone Chiropractic', ownerName: 'Dr. Daniel Reyes', location: 'Sacramento, CA',
-      carePlanValue: 1400, monthlyRetainer: 2400, monthlyAdSpend: 1200,
+      carePlanValue: 1400, monthlyRetainer: 2000, monthlyAdSpend: 1500,
       kpiTargets: { costPerLead: 30, costPerSchedule: 60 }, shareToken: 'rc-demo',
     },
     {
@@ -32,29 +32,29 @@ window.FLY_MOCK = (function () {
 
   // ---------- Riverstone (demo): hand-written, matches the brief ----------
   const rsMonthly = [
-    { period: '2026-05', adSpend: 1200, impressions: 78000, clicks: 1150, leads: 28, booked: 11, showed: 7,  converted: 2, revenue: 2800 },
-    { period: '2026-06', adSpend: 1200, impressions: 80500, clicks: 1240, leads: 33, booked: 14, showed: 9,  converted: 3, revenue: 4200 },
-    { period: '2026-07', adSpend: 1200, impressions: 82000, clicks: 1320, leads: 36, booked: 16, showed: 11, converted: 4, revenue: 5600 },
-    { period: '2026-08', adSpend: 1200, impressions: 84500, clicks: 1405, leads: 41, booked: 18, showed: 12, converted: 4, revenue: 5600 },
-    { period: '2026-09', adSpend: 1200, impressions: 86000, clicks: 1480, leads: 44, booked: 20, showed: 13, converted: 5, revenue: 7000 },
-    { period: '2026-10', adSpend: 1200, impressions: 88400, clicks: 1562, leads: 48, booked: 22, showed: 15, converted: 6, revenue: 8400 },
+    { period: '2026-05', adSpend: 1500, impressions: 78000, clicks: 1150, leads: 28, booked: 11, showed: 7,  converted: 2, revenue: 2800 },
+    { period: '2026-06', adSpend: 1500, impressions: 80500, clicks: 1240, leads: 33, booked: 14, showed: 9,  converted: 3, revenue: 4200 },
+    { period: '2026-07', adSpend: 1500, impressions: 82000, clicks: 1320, leads: 36, booked: 16, showed: 11, converted: 4, revenue: 5600 },
+    { period: '2026-08', adSpend: 1500, impressions: 84500, clicks: 1405, leads: 41, booked: 18, showed: 12, converted: 4, revenue: 5600 },
+    { period: '2026-09', adSpend: 1500, impressions: 86000, clicks: 1480, leads: 44, booked: 20, showed: 13, converted: 5, revenue: 7000 },
+    { period: '2026-10', adSpend: 1500, impressions: 88400, clicks: 1562, leads: 48, booked: 22, showed: 15, converted: 6, revenue: 8400 },
   ];
 
   const W = (period, start, adSpend, impressions, clicks, leads, booked, showed, converted, revenue) =>
     ({ period, start, adSpend, impressions, clicks, leads, booked, showed, converted, revenue });
   const rsWeekly = [
-    W('2026-W30', '2026-07-20', 270, 18900, 302,  8, 3, 2, 1, 1400),
-    W('2026-W31', '2026-07-27', 275, 19400, 318,  9, 4, 3, 1, 1400),
-    W('2026-W32', '2026-08-03', 272, 19100, 310,  9, 4, 3, 1, 1400),
-    W('2026-W33', '2026-08-10', 280, 19800, 335, 10, 4, 3, 1, 1400),
-    W('2026-W34', '2026-08-17', 276, 19500, 329, 10, 5, 3, 1, 1400),
-    W('2026-W35', '2026-08-24', 279, 19900, 342, 11, 5, 3, 1, 1400),
-    W('2026-W36', '2026-08-31', 281, 20100, 356, 10, 4, 3, 1, 1400),
-    W('2026-W37', '2026-09-07', 278, 19800, 348, 11, 5, 3, 1, 1400),
-    W('2026-W38', '2026-09-14', 282, 20400, 371, 11, 5, 4, 2, 2800),
-    W('2026-W39', '2026-09-21', 285, 20700, 388, 12, 5, 3, 1, 1400),
-    W('2026-W40', '2026-09-28', 280, 20300, 380, 12, 6, 4, 1, 1400),
-    W('2026-W41', '2026-10-05', 285, 21000, 402, 13, 6, 4, 2, 2800),
+    W('2026-W30', '2026-07-20', 338, 18900, 302,  8, 3, 2, 1, 1400),
+    W('2026-W31', '2026-07-27', 344, 19400, 318,  9, 4, 3, 1, 1400),
+    W('2026-W32', '2026-08-03', 340, 19100, 310,  9, 4, 3, 1, 1400),
+    W('2026-W33', '2026-08-10', 350, 19800, 335, 10, 4, 3, 1, 1400),
+    W('2026-W34', '2026-08-17', 345, 19500, 329, 10, 5, 3, 1, 1400),
+    W('2026-W35', '2026-08-24', 349, 19900, 342, 11, 5, 3, 1, 1400),
+    W('2026-W36', '2026-08-31', 351, 20100, 356, 10, 4, 3, 1, 1400),
+    W('2026-W37', '2026-09-07', 348, 19800, 348, 11, 5, 3, 1, 1400),
+    W('2026-W38', '2026-09-14', 353, 20400, 371, 11, 5, 4, 2, 2800),
+    W('2026-W39', '2026-09-21', 356, 20700, 388, 12, 5, 3, 1, 1400),
+    W('2026-W40', '2026-09-28', 350, 20300, 380, 12, 6, 4, 1, 1400),
+    W('2026-W41', '2026-10-05', 356, 21000, 402, 13, 6, 4, 2, 2800),
   ];
 
   const C = (id, name, format, spend, results, status, launchedDate) =>
@@ -160,7 +160,7 @@ window.FLY_MOCK = (function () {
 
   // Ad-account health inputs (would come from Meta Insights API).
   const health = {
-    riverstone: { frequency: 2.1, cpm7: 14.2, cpmPrev7: 13.1, spentToDate: 465, monthDay: 11, daysInMonth: 31 },
+    riverstone: { frequency: 2.1, cpm7: 14.2, cpmPrev7: 13.1, spentToDate: 580, monthDay: 11, daysInMonth: 31 },
     summit:   { frequency: 3.1, cpm7: 19.8, cpmPrev7: 15.4, spentToDate: 720, monthDay: 11, daysInMonth: 31 },
     golden:   { frequency: 1.8, cpm7: 16.5, cpmPrev7: 16.9, spentToDate: 690, monthDay: 11, daysInMonth: 31 },
   };
